@@ -67,17 +67,9 @@ $sidebar-width: 200px;
       transform: translate(#{$sidebar-width}, 0px);
     }
   }
-  
-  body { 
-    font-family: 'Poppins', sans-serif; 
-  }
-
-  h1,h2,h3,h4,h5,h6 {
-    font-family: 'Rubik', sans-serif;
-  }
 
   .fade-enter-active, .fade-leave-active {
-    transition: opacity .3s ease-in-out;
+    transition: opacity .2s ease-in-out;
   }
 
   .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
