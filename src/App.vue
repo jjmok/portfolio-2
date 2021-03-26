@@ -1,30 +1,86 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="main-view" class="main-container">
+    <div class="bg-secondary text-white p-5 pf-mainview">
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </div>
+
+    <div class="bg-warning d-inline-flex flex-column pf-sidebar">
+      <!-- <router-link to="/">Home</router-link> -->
+      <!-- <router-link to="/about">About</router-link> -->
+      <router-link :to="{ name: 'About Me' }">About Me</router-link>
+      <router-link :to="{ name: 'Case Study' }">Case Study</router-link>
+      <router-link :to="{ name: 'Developer' }">Developer</router-link>
+      <router-link :to="{ name: 'Training' }">Training</router-link>
+      <router-link :to="{ name: 'Creative' }">Creative</router-link>
+    </div>
   </div>
-  <router-view/>
+  
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+$sidebar-width: 200px;
 
-#nav {
-  padding: 30px;
+  .main-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+  .pf-sidebar,
+  .pf-mainview {
+    height: 100vh;
+    transition: transform 0.4s;
+    position: absolute;
+  }
 
-    &.router-link-exact-active {
-      color: #42b983;
+  .pf-sidebar {
+    transition: transform 0.3s ease-out;
+    transform: translate(0px, 0px);
+    width: $sidebar-width;
+    right: 0;
+    top: 0;
+  }
+
+  .pf-mainview {
+    width: calc( 100vw - #{$sidebar-width} );
+    left: 0;
+    top: 0;
+    will-change: width;
+    transition: 
+      width 0.3s ease-out,
+      transform 0.3s ease-out,
+      opacity 0.3s ease-out;
+    transform: translate(0px, 0px);
+    z-index: 1;
+  }
+  
+  .read-mode {
+    .pf-mainview {
+      width: 100vw;
+    }
+    .pf-sidebar {
+      transform: translate(#{$sidebar-width}, 0px);
     }
   }
-}
+  
+  body { 
+    font-family: 'Poppins', sans-serif; 
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .3s ease-in-out;
+  }
+
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
 </style>
