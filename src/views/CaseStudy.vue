@@ -3,9 +3,10 @@
     <div>
       <h1>Case Study</h1>
 
-      <li v-for="caseStudy in cases" :key="caseStudy">
-        <router-link :to="{ name: caseStudy }">{{ caseStudy }}</router-link>
-      </li>
+      <div v-for="(caseStudy, index) in cases" :key="index">
+        <CaseStudyCard 
+          :study-name="caseStudy"/>
+      </div>
 
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
@@ -17,8 +18,13 @@
 </template>
 
 <script>
+import CaseStudyCard from '@/components/CaseStudyCard.vue'
+
 export default {
   name: "CaseStudy",
+  components: {
+    CaseStudyCard
+  },
   props: {
     msg: String,
   },
