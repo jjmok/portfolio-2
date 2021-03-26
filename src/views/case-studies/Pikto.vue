@@ -1,16 +1,18 @@
 <template>
-  <div>
+  <CaseStudyReader>
     <h1>Pikto Case Study 2</h1>
     <p>Pikto Stuff</p>
-  </div>
+  </CaseStudyReader>
 </template>
 
 <script>
+import CaseStudyReader from '@/components/CaseStudyReader.vue'
+
 export default {
   name: 'Pikto',
-  props: {
-    msg: String
-  }
+  components: {
+    CaseStudyReader
+  },
 }
 </script>
 
