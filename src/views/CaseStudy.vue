@@ -5,13 +5,12 @@
       <router-link :to="{ name: 'Opogo' }">Opogo</router-link>
       <router-link :to="{ name: 'Pikto' }">Pikto</router-link>
       
-      <div class="bg-info">
-        <router-view v-slot="{ Component }">
-          <transition name="fade" mode="out-in">
-            <component :is="Component" />
-          </transition>
-        </router-view>
-      </div>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+
     </div>
   </div>
 </template>
@@ -27,7 +26,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
   .fade-enter-active, .fade-leave-active {
     transition: opacity .3s ease-in-out;
   }

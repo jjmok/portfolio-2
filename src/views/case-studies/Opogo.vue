@@ -1,7 +1,8 @@
 <template>
-  <div class="main-container">
+  <div class="case-container bg-info">
     <h1>Opogo</h1>
     <p>Opogo Stuff</p>
+    <router-link :to="{ name: 'Case Study' }">Close</router-link>
     <!-- <button 
       @click="emit('close')" 
       type="button" 
@@ -23,5 +24,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
+  .case-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+  }
 </style>

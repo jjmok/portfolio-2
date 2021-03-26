@@ -1,5 +1,5 @@
 <template>
-  <div id="main-view" class="main-container">
+  <div class="main-container">
     <div class="bg-secondary text-white p-5 pf-mainview">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
@@ -9,8 +9,6 @@
     </div>
 
     <div class="bg-warning d-inline-flex flex-column pf-sidebar">
-      <!-- <router-link to="/">Home</router-link> -->
-      <!-- <router-link to="/about">About</router-link> -->
       <router-link :to="{ name: 'About Me' }">About Me</router-link>
       <router-link :to="{ name: 'Case Study' }">Case Study</router-link>
       <router-link :to="{ name: 'Developer' }">Developer</router-link>
@@ -22,7 +20,7 @@
 </template>
 
 <style lang="scss">
-$sidebar-width: 200px;
+  $sidebar-width: 200px;
 
   .main-container {
     position: relative;
