@@ -1,19 +1,17 @@
 <template>
   <div>
-    <div>
-      <h1>Case Study</h1>
+    <h1>Case Study</h1>
 
-      <div v-for="(caseStudy, index) in cases" :key="index">
-        <CaseStudyCard 
-          :study-name="caseStudy"/>
-      </div>
-
-      <router-view v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
-          <component :is="Component" />
-        </transition>
-      </router-view>
+    <div v-for="(caseStudy, index) in cases" :key="index">
+      <CaseStudyCard 
+        :study-name="caseStudy"/>
     </div>
+
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 

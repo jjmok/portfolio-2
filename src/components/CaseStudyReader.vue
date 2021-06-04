@@ -12,10 +12,18 @@
 </template>
 
 <script>
+// import VueRouter from 'vue-router'
+
 export default {
   name: 'CaseStudyReader',
   props: {
     studyName: String
+  },
+  methods: {
+    back: () => {
+      // console.log(VueRouter)
+      // this.$router.go(-1)
+    }
   }
 }
 </script>
@@ -25,15 +33,15 @@ export default {
   .close {
     position: sticky;
     top: 0;
-    left: 0;
+    right: 0;
     font-size: 4.5rem;
     text-shadow: none;
-    float: none;
+    color: white;
   }
   .case-container {
     overflow: scroll;
     position: absolute;
-    padding-left: 48px;
+    padding: 120px 240px 0;
     top: 0;
     left: 0;
     height: 100vh;

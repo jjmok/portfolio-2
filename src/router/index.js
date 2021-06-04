@@ -7,6 +7,7 @@ import Developer from "../views/Developer.vue";
 import Training from "../views/Training.vue";
 import Opogo from "../views/case-studies/Opogo.vue";
 import Pikto from "../views/case-studies/Pikto.vue";
+import DesignSystem from "../views/case-studies/DesignSystem.vue";
 
 const routes = [
   { 
@@ -43,7 +44,14 @@ const routes = [
   { 
     path: "/developer",
     name: "Developer",
-    component: Developer 
+    component: Developer,
+    children: [
+      {
+        path: "design-system",
+        name: "Design System",
+        component: DesignSystem
+      }
+    ]
   },
   { 
     path: "/training",
