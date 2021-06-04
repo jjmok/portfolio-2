@@ -39,20 +39,4 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-  .fade-enter-from, .fade-leave-to {
-    opacity: 0;
-  }
-
-  .fade-enter-from {
-    transform: translateY(10px)
-  }
-  .fade-leave-to {
-    transform: translateY(-10px)
-  }
-
-  .fade-enter-active, .fade-leave-active {
-    transition: 
-      opacity .2s ease-in,
-      transform .2s ease-in;
-  }
 </style>

@@ -1,29 +1,25 @@
+<!-- Router.go(-1) to go to previous page -->
+
 <template>
   <div class="case-container bg-dark">
-    <router-link :to="{ name: 'Case Study' }" 
+    <button
+      @click="$router.go(-1)" 
       tag="button" 
       type="button" 
       class="close" 
       aria-label="Close">
       <span aria-hidden="true">&times;</span>
-    </router-link>
+    </button>
     <slot/>
   </div>
 </template>
 
 <script>
 // import VueRouter from 'vue-router'
-
 export default {
   name: 'CaseStudyReader',
   props: {
     studyName: String
-  },
-  methods: {
-    back: () => {
-      // console.log(VueRouter)
-      // this.$router.go(-1)
-    }
   }
 }
 </script>

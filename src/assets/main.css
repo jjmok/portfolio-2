@@ -5,3 +5,21 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Rubik', sans-serif;
 }
+
+/*Transitions*/
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-from {
+  transform: translateY(10px)
+}
+.fade-leave-to {
+  transform: translateY(-10px)
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: 
+    opacity .2s ease-in,
+    transform .2s ease-in;
+}
