@@ -1,13 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 // import Home from '../views/Home.vue'
-import CaseStudy from '../views/CaseStudy.vue'
+// import CaseStudy from '../views/CaseStudy.vue'
 import AboutMe from "../views/AboutMe.vue";
-import Creative from "../views/Creative.vue";
-import Developer from "../views/Developer.vue";
-import Training from "../views/Training.vue";
-import Opogo from "../views/case-studies/Opogo.vue";
-import Pikto from "../views/case-studies/Pikto.vue";
-import DesignSystem from "../views/case-studies/DesignSystem.vue";
+// import Creative from "../views/Creative.vue";
+// import Developer from "../views/Developer.vue";
+// import Training from "../views/Training.vue";
+// import Opogo from "../views/case-studies/Opogo.vue";
+// import Pikto from "../views/case-studies/Pikto.vue";
+// import DesignSystem from "../views/case-studies/DesignSystem.vue";
 
 const routes = [
   { 
@@ -19,45 +19,45 @@ const routes = [
     name: "About Me",
     component: AboutMe 
   },
-  { 
-    path: "/creative",
-    name: "Creative",
-    component: Creative
-  },
-  { 
-    path: "/case-study",
-    name: "Case Study",
-    component: CaseStudy,
-    children: [
-      {
-        path: "opogo",
-        name: "Opogo",
-        component: Opogo
-      },
-      {
-        path: "pikto",
-        name: "Pikto",
-        component: Pikto
-      }
-    ]
-  },
-  { 
-    path: "/developer",
-    name: "Developer",
-    component: Developer,
-    children: [
-      {
-        path: "design-system",
-        name: "Design System",
-        component: DesignSystem
-      }
-    ]
-  },
-  { 
-    path: "/training",
-    name: "Training",
-    component: Training 
-  },
+  // { 
+  //   path: "/creative",
+  //   name: "Creative",
+  //   component: Creative
+  // },
+  // { 
+  //   path: "/case-study",
+  //   name: "Case Study",
+  //   component: CaseStudy,
+  //   children: [
+  //     {
+  //       path: "opogo",
+  //       name: "Opogo",
+  //       component: Opogo
+  //     },
+  //     {
+  //       path: "pikto",
+  //       name: "Pikto",
+  //       component: Pikto
+  //     }
+  //   ]
+  // },
+  // { 
+  //   path: "/developer",
+  //   name: "Developer",
+  //   component: Developer,
+  //   children: [
+  //     {
+  //       path: "design-system",
+  //       name: "Design System",
+  //       component: DesignSystem
+  //     }
+  //   ]
+  // },
+  // { 
+  //   path: "/training",
+  //   name: "Training",
+  //   component: Training 
+  // },
   {
     path: "/:pathMatch(.*)*",
     redirect: '/about-me'

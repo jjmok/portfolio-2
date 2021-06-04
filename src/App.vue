@@ -9,12 +9,12 @@
     </div>
 
     <div class="bg-warning d-inline-flex flex-column pf-sidebar">
-      <router-link 
+      <!-- <router-link 
         v-for="(page, index) in pages" 
         :key="index"
         :to="{ name: page }"> 
         {{ page }}
-      </router-link>
+      </router-link> -->
 
       <!-- <router-link :to="{ name: 'About Me' }">About Me</router-link>
       <router-link :to="{ name: 'Case Study' }">Case Study</router-link>
