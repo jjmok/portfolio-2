@@ -3,10 +3,12 @@
 <template>
   <div class="case-container bg-dark">
     <button
-      @click="$router.go(-1)" 
+      @click="goBack"
+      :class="{disabled: isDisabled}"
+      :disabled="isDisabled"
       tag="button" 
       type="button" 
-      class="close" 
+      class="btn close" 
       aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -20,6 +22,19 @@ export default {
   name: 'CaseStudyReader',
   props: {
     studyName: String
+  },
+  methods: {
+    goBack: function () {
+      this.$router.go(-1)
+      
+      //disabled button on click to prevent the event from firing twice, goes back two pages
+      this.isDisabled = true
+    }
+  },
+  data: function () {
+    return {
+      isDisabled : false
+    }
   }
 }
 </script>
