@@ -2,17 +2,20 @@
 
 <template>
   <div class="case-container bg-dark">
-    <button
-      @click="goBack"
-      :class="{disabled: isDisabled}"
-      :disabled="isDisabled"
-      tag="button" 
-      type="button" 
-      class="btn close" 
-      aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-    <slot/>
+
+    <div class="article-container">
+      <button
+        @click="goBack"
+        :class="{disabled: isDisabled}"
+        :disabled="isDisabled"
+        tag="button" 
+        type="button" 
+        class="btn close" 
+        aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <slot/>
+    </div> 
   </div>
 </template>
 
@@ -41,22 +44,30 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  $close-placement: 7rem;
+
   .close {
     position: sticky;
-    top: 0;
-    right: 0;
+    top: 20px;
+    right: 20px;
     font-size: 4.5rem;
     text-shadow: none;
     color: white;
+    margin-right: -$close-placement;
+    margin-top: -4rem;
   }
+
   .case-container {
     overflow: scroll;
     position: absolute;
-    padding: 120px 240px 0;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
     will-change: transform, opacity;
+  }
+
+  .article-container {
+    padding: 120px 240px 0;
   }
 </style>
