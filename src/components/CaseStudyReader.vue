@@ -27,7 +27,7 @@ export default {
     goBack: function () {
       this.$router.go(-1)
       
-      //disabled button on click to prevent the event from firing twice, goes back two pages
+      //disabled button on click to prevent the event from firing twice, goes back two
       this.isDisabled = true
     }
   },

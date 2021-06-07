@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-view">
     <h1>Training</h1>
     <h2>CSS Tutorial Training</h2>
     <ul>

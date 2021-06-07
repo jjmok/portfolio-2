@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-view">
     <h1>Creative</h1>
     <a target="_blank" href="https://codepen.io/JayJay89/full/OKOdma">Charles the CSS Corgi</a>
   </div>

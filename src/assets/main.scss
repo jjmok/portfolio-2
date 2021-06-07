@@ -1,0 +1,55 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$transition-speed: 0.3s;
+
+$spacer-1: $spacer * .25;
+$spacer-2: $spacer * .5;
+$spacer-3: $spacer * 1;
+$spacer-4: $spacer * 1.5;
+$spacer-5: $spacer * 3;
+
+
+body { 
+  font-family: 'Poppins', sans-serif; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Rubik', sans-serif;
+}
+
+.main-view {
+  padding: $spacer-5;
+}
+
+/*Transitions*/
+.fade-enter-from, 
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-from {
+  transform: translateY(-20px)
+}
+
+.fade-enter-to, 
+.fade-leave-from {
+  transform: translateY(0px)
+}
+
+.fade-leave-to {
+  transform: translateY(20px)
+}
+
+.fade-enter-active {
+  transition: 
+    opacity $transition-speed ease-out,
+    transform $transition-speed ease-out;
+}
+
+.fade-leave-active {
+  transition: 
+    opacity $transition-speed ease-in,
+    transform $transition-speed ease-in;
+}

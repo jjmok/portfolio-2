@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-view">
     <h1>Developer</h1>
     
     <div v-for="(caseStudy, index) in cases" :key="index">
