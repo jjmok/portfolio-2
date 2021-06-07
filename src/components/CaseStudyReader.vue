@@ -2,7 +2,6 @@
 
 <template>
   <div class="case-container bg-dark">
-
     <div class="article-container">
       <button
         @click="goBack"
@@ -21,6 +20,7 @@
 
 <script>
 // import VueRouter from 'vue-router'
+
 export default {
   name: 'CaseStudyReader',
   props: {
@@ -28,10 +28,20 @@ export default {
   },
   methods: {
     goBack: function () {
-      this.$router.go(-1)
+
+      //Source: https://stackoverflow.com/a/61433761
+      //If link is accessed from an outside source, pressing close btn redirects visitors to the home page instead
+      if (window.history.length > 2 ) {
+        this.$router.go(-1)
+      } else {
+        this.$router.push('/')
+      }
       
       //disabled button on click to prevent the event from firing twice, goes back two
       this.isDisabled = true
+    },
+    hasHistory () { 
+      return window.history.length > 2 
     }
   },
   data: function () {
