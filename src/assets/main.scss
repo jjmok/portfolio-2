@@ -1,15 +1,4 @@
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-
-$transition-speed: 0.3s;
-
-$spacer-1: $spacer * .25;
-$spacer-2: $spacer * .5;
-$spacer-3: $spacer * 1;
-$spacer-4: $spacer * 1.5;
-$spacer-5: $spacer * 3;
-
+@import "@/assets/prerequisite";
 
 body { 
   font-family: 'Poppins', sans-serif; 

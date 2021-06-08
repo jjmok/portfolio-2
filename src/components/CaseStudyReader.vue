@@ -54,6 +54,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  @import "@/assets/prerequisite";
+  
   $close-placement: 7rem;
 
   .close {
@@ -70,11 +72,15 @@ export default {
   .case-container {
     overflow: scroll;
     position: absolute;
-    top: 0;
+    top: -$sidebar-height;
     left: 0;
     height: 100vh;
     width: 100vw;
     will-change: transform, opacity;
+
+    @include media-breakpoint-up(md) { 
+      top: 0;
+    }
   }
 
   .article-container {

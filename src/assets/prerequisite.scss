@@ -1,0 +1,14 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$spacer-1: $spacer * .25;
+$spacer-2: $spacer * .5;
+$spacer-3: $spacer * 1;
+$spacer-4: $spacer * 1.5;
+$spacer-5: $spacer * 3;
+
+$sidebar-width: 200px;
+$sidebar-height: 150px;
+
+$transition-speed: 0.3s;

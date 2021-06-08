@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style lang="scss">
-  $sidebar-width: 200px;
+  @import "@/assets/prerequisite";
 
   .main-container {
     position: relative;
@@ -47,22 +47,31 @@ export default {
 
   .pf-sidebar,
   .pf-mainview {
-    height: 100vh;
-    will-change: width;
     position: absolute;
   }
 
   .pf-sidebar {
-    transform: translate(0px, 0px);
-    width: $sidebar-width;
-    right: 0;
-    top: 0;
+    width: 100vw;
+    height: $sidebar-height;
+
+    @include media-breakpoint-up(md) { 
+      width: $sidebar-width;
+      right: 0;
+      top: 0;
+      height: 100vh;
+    }
   }
 
   .pf-mainview {
-    width: calc( 100vw - #{$sidebar-width} );
-    top: 0;
-    transform: translate(0px, 0px);
+    width: 100vw;
+    top: $sidebar-height;
+    height: calc(100vh - #{$sidebar-height});
     z-index: 1;
+
+    @include media-breakpoint-up(md) { 
+      width: calc( 100vw - #{$sidebar-width} );
+      top: 0;
+      height: 100vh;
+    }
   }
 </style>
