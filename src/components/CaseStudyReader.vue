@@ -72,7 +72,7 @@ export default {
   .case-container {
     overflow: scroll;
     position: absolute;
-    top: -$sidebar-height;
+    top: -$nav-height;
     left: 0;
     height: 100vh;
     width: 100vw;
