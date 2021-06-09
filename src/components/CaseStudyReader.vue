@@ -72,15 +72,11 @@ export default {
   .case-container {
     overflow: scroll;
     position: absolute;
-    top: -$nav-height;
+    top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
     will-change: transform, opacity;
-
-    @include media-breakpoint-up(md) { 
-      top: 0;
-    }
   }
 
   .article-container {
