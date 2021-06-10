@@ -1,7 +1,7 @@
 <template>
   <router-link 
     class='case-study-card bg-info m-3' 
-    :to="{ name: studyName }">
+    :to="{ name: studyName, query: {readmode: 'true'} }">
     <h1>{{ studyName }}</h1>  
   </router-link>
 </template>

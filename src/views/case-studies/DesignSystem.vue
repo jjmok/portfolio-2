@@ -12,7 +12,7 @@ export default {
   name: 'Pikto',
   components: {
     CaseStudyReader
-  },
+  }
 }
 </script>
 

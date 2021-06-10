@@ -17,9 +17,10 @@
           {{ page }}
         </router-link>
       </nav>
-      
       <nav class="pf-mobile-nav">
-        <router-link :to="{ name: 'About Me' }">About Me</router-link>
+        <router-link :to="{ name: 'About Me' }">
+          About Me
+        </router-link>
 
         <button
           @click="activeNav"
@@ -58,7 +59,6 @@ export default {
   methods: {
     activeNav: function () {
       this.dropdownActive = !this.dropdownActive
-      console.log ('asdsad');
     }
   }
 };
@@ -148,11 +148,11 @@ export default {
     }
   }
 
-// @include media-breakpoint-up(xs) { ... }
-// @include media-breakpoint-up(sm) { ... }
-// @include media-breakpoint-up(md) { ... }
-// @include media-breakpoint-up(lg) { ... }
-// @include media-breakpoint-up(xl) { ... }
+  // @include media-breakpoint-up(xs) { ... }
+  // @include media-breakpoint-up(sm) { ... }
+  // @include media-breakpoint-up(md) { ... }
+  // @include media-breakpoint-up(lg) { ... }
+  // @include media-breakpoint-up(xl) { ... }
 </style>
 
 

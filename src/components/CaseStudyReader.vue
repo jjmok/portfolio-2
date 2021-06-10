@@ -36,7 +36,7 @@ export default {
       } else {
         this.$router.push('/')
       }
-      
+
       //disabled button on click to prevent the event from firing twice, goes back two
       this.isDisabled = true
     },
@@ -47,6 +47,12 @@ export default {
   data: function () {
     return {
       isDisabled : false
+    }
+  },
+  mounted(){
+    if(this.$route.query.readmode) {
+      console.log("emitting readmode")
+      this.$emit('readmode')
     }
   }
 }
@@ -75,11 +81,11 @@ export default {
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
-    will-change: transform, opacity;
+    width: 100%;
+    // will-change: transform, opacity;
   }
 
   .article-container {
-    padding: 120px 240px 0;
+    padding: 120px 60px 0;
   }
 </style>
