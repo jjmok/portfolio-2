@@ -38,7 +38,6 @@ export default {
       //disabled button on click to prevent the event from firing twice, goes back two
       this.isDisabled = true
       readStore.readModeOff()
-      console.log(readStore.state.readmode)
     }
   },
   data: function () {
