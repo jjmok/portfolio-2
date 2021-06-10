@@ -1,5 +1,7 @@
 <template>
-  <div class="main-container">
+  <div
+    :class="{readmode: readModeStatus}"
+    class="main-container">
     <div class="bg-secondary text-white pf-mainview">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
@@ -7,7 +9,7 @@
         </transition>
       </router-view>
     </div>
-
+    
     <div class="bg-warning pf-navigation">
       <nav class="pf-desktop-nav">
         <router-link 
@@ -44,6 +46,8 @@
 </template>
 
 <script>
+import {readStore} from "@/store/read-store";
+
 export default {
   name: "App",
   props: {
@@ -53,12 +57,17 @@ export default {
     return {
       pages: ["About Me", "Case Study", "Developer", "Training", "Creative"],
       miniPage: ["Case Study", "Developer", "Training", "Creative"],
-      dropdownActive: false
+      dropdownActive: false,
     }
   },
   methods: {
     activeNav: function () {
       this.dropdownActive = !this.dropdownActive
+    }
+  },
+  computed: {
+    readModeStatus() {
+      return readStore.state.readmode
     }
   }
 };
@@ -101,6 +110,10 @@ export default {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
+
+    &.readmode {
+      border: 10px solid red;
+    }
   }
 
   .menu-dropdown {

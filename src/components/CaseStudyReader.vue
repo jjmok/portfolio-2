@@ -1,5 +1,3 @@
-<!-- Router.go(-1) to go to previous page -->
-
 <template>
   <div class="case-container bg-dark">
     <div class="article-container">
@@ -29,7 +27,6 @@ export default {
   },
   methods: {
     goBack: function () {
-
       //Source: https://stackoverflow.com/a/61433761
       //If link is accessed from an outside source, pressing close btn redirects visitors to the home page instead
       if (window.history.length > 2 ) {
@@ -40,9 +37,8 @@ export default {
 
       //disabled button on click to prevent the event from firing twice, goes back two
       this.isDisabled = true
-    },
-    hasHistory () { 
-      return window.history.length > 2 
+      readStore.readModeOff()
+      console.log(readStore.state.readmode)
     }
   },
   data: function () {
@@ -52,10 +48,6 @@ export default {
   },
   mounted(){
     readStore.readModeOn()
-    // if(this.$route.query.readmode) {
-    //   console.log("emitting readmode")
-    //   this.$emit('readmode')
-    // }
   }
 }
 </script>
