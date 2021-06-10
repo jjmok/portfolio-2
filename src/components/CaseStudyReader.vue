@@ -20,6 +20,7 @@
 
 <script>
 // import VueRouter from 'vue-router'
+import {readStore} from "@/store/read-store";
 
 export default {
   name: 'CaseStudyReader',
@@ -50,10 +51,11 @@ export default {
     }
   },
   mounted(){
-    if(this.$route.query.readmode) {
-      console.log("emitting readmode")
-      this.$emit('readmode')
-    }
+    readStore.readModeOn()
+    // if(this.$route.query.readmode) {
+    //   console.log("emitting readmode")
+    //   this.$emit('readmode')
+    // }
   }
 }
 </script>
