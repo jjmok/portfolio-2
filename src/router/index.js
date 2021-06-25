@@ -2,12 +2,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 // import Home from '../views/Home.vue'
 import CaseStudy from '../views/CaseStudy.vue'
 import AboutMe from "../views/AboutMe.vue";
-import Creative from "../views/case-studies/Creative.vue";
+import Creative from "../views/articles/Creative.vue";
 import Works from "../views/Works.vue";
-import Training from "../views//case-studies/Training.vue";
-import Opogo from "../views/case-studies/Opogo.vue";
-import Pikto from "../views/case-studies/Pikto.vue";
-import DesignSystem from "../views/case-studies/DesignSystem.vue";
+import Training from "../views//articles/Training.vue";
+import Opogo from "../views/articles/Opogo.vue";
+import Pikto from "../views/articles/Pikto.vue";
+import DesignSystem from "../views/articles/DesignSystem.vue";
 
 const routes = [
   { 

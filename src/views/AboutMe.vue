@@ -9,15 +9,28 @@
       <router-link class="mr-2" :to="{ name: 'Design System'}">Design System</router-link>
     </div>
 
-
     <ul>
-      <li>2020 - Product Designer</li>
-      <li>2020 - Experience Haus - Opogo</li>
-      <li>2019 - Corgi</li>
-      <li>2017 - Training</li>
-      <li>2018 - Design System</li>
-      <li>2016 - UI Developer Work</li>
-      <li>2009 - 2012 USM</li>
+      <li>
+        2020 - Product Designer
+      </li>
+      <li>
+        2020 - <router-link class="mr-2" :to="{ name: 'Opogo'}">Experience Haus - Opogo</router-link>
+      </li>
+      <li>
+        2019 - Corgi
+      </li>
+      <li>
+        2017 - <router-link class="mr-2" :to="{ name: 'Training'}">Training</router-link> 
+      </li>
+      <li>
+        2018 - <router-link class="mr-2" :to="{ name: 'Design System'}">Design System</router-link>
+      </li>
+      <li>
+        2016 - <router-link class="mr-2" :to="{ name: 'Pikto'}">UI Developer Work</router-link>
+      </li>
+      <li>
+        2009 - 2012 USM
+      </li>
     </ul>
 
     
