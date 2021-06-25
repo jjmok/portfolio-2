@@ -1,6 +1,6 @@
 <template>
   <div class="main-view">
-    <h1>Developer</h1>
+    <h1>Works</h1>
     
     <div v-for="(caseStudy, index) in cases" :key="index">
       <CaseStudyCard 
@@ -19,7 +19,7 @@
 import CaseStudyCard from '@/components/CaseStudyCard.vue'
 
 export default {
-  name: 'Developer',
+  name: 'Works',
   components: {
     CaseStudyCard
   },
@@ -28,7 +28,7 @@ export default {
   },
   data: function () {
     return {
-      cases: ["Design System"]
+      cases: ["Design System", "Creative", "Training"]
     }
   }
 }

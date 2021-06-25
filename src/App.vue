@@ -20,26 +20,13 @@
         </router-link>
       </nav>
       <nav class="pf-mobile-nav">
-        <router-link :to="{ name: 'About Me' }">
-          About Me
+        <router-link
+          class="mr-3"
+          v-for="(page, index) in pages" 
+          :key="index"
+          :to="{ name: page }"> 
+          {{ page }}
         </router-link>
-
-        <button
-          @click="activeNav"
-          class="btn btn-primary btn-dropdown">
-          Nav
-        </button>
-
-        <nav 
-          v-show="dropdownActive"
-          class="menu-dropdown">
-          <router-link 
-            v-for="(page, index) in miniPage" 
-            :key="index"
-            :to="{ name: page }"> 
-            {{ page }}
-          </router-link>
-        </nav>
       </nav>
     </div>
   </div>
@@ -55,14 +42,7 @@ export default {
   },
   data: function () {
     return {
-      pages: ["About Me", "Case Study", "Developer", "Training", "Creative"],
-      miniPage: ["Case Study", "Developer", "Training", "Creative"],
-      dropdownActive: false,
-    }
-  },
-  methods: {
-    activeNav: function () {
-      this.dropdownActive = !this.dropdownActive
+      pages: ["About Me", "Case Study", "Works"],
     }
   },
   computed: {
@@ -97,7 +77,6 @@ export default {
   .pf-mobile-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: relative;
     height: $nav-height;
     padding: 0px $spacer-3;
@@ -118,15 +97,15 @@ export default {
     }
   }
 
-  .menu-dropdown {
-    display: flex;
-    flex-direction: column;
-    background-color: red;
-    position: absolute;
-    top: $nav-height;
-    right: 20px;
-    padding: 20px;
-  }
+  // .menu-dropdown {
+  //   display: flex;
+  //   flex-direction: column;
+  //   background-color: red;
+  //   position: absolute;
+  //   top: $nav-height;
+  //   right: 20px;
+  //   padding: 20px;
+  // }
 
   .pf-navigation,
   .pf-mainview {

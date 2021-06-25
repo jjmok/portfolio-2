@@ -1,7 +1,7 @@
 <template>
   <CaseStudyReader>
     <h1>Design System</h1>
-    <p>Dessign System Stuff</p>
+    <p>Design System Stuff</p>
   </CaseStudyReader>
 </template>
 

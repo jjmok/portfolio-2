@@ -1,5 +1,5 @@
 <template>
-  <div class="main-view">
+  <CaseStudyReader>
     <h1>Training</h1>
     <h2>CSS Tutorial Training</h2>
     <ul>
@@ -7,14 +7,16 @@
       <li><a target="_blank" href="https://slides.com/jjmok/layouts-new">Flex Layouts</a></li>
       <li><a target="_blank" href="https://slides.com/jjmok/csspractices">CSS Best Practices</a></li>
     </ul>
-  </div>
+  </CaseStudyReader>
 </template>
 
 <script>
+import CaseStudyReader from '@/components/CaseStudyReader.vue'
+
 export default {
   name: 'Training',
-  props: {
-    msg: String
+  components: {
+    CaseStudyReader
   }
 }
 </script>

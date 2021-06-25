@@ -2,9 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router'
 // import Home from '../views/Home.vue'
 import CaseStudy from '../views/CaseStudy.vue'
 import AboutMe from "../views/AboutMe.vue";
-import Creative from "../views/Creative.vue";
-import Developer from "../views/Developer.vue";
-import Training from "../views/Training.vue";
+import Creative from "../views/case-studies/Creative.vue";
+import Works from "../views/Works.vue";
+import Training from "../views//case-studies/Training.vue";
 import Opogo from "../views/case-studies/Opogo.vue";
 import Pikto from "../views/case-studies/Pikto.vue";
 import DesignSystem from "../views/case-studies/DesignSystem.vue";
@@ -18,11 +18,6 @@ const routes = [
     path: "/about-me",
     name: "About Me",
     component: AboutMe 
-  },
-  { 
-    path: "/creative",
-    name: "Creative",
-    component: Creative
   },
   { 
     path: "/case-study",
@@ -42,21 +37,26 @@ const routes = [
     ]
   },
   { 
-    path: "/developer",
-    name: "Developer",
-    component: Developer,
+    path: "/works",
+    name: "Works",
+    component: Works,
     children: [
       {
         path: "design-system",
         name: "Design System",
         component: DesignSystem
-      }
+      },
+      { 
+        path: "creative",
+        name: "Creative",
+        component: Creative
+      },
+      { 
+        path: "training",
+        name: "Training",
+        component: Training 
+      },
     ]
-  },
-  { 
-    path: "/training",
-    name: "Training",
-    component: Training 
   },
   {
     path: "/:pathMatch(.*)*",

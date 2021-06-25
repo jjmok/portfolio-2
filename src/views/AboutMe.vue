@@ -4,8 +4,25 @@
     <p>This is a work in progress</p>
 
     <p> tests </p>
-    <router-link :to="{ name: 'Opogo'}">Opogo</router-link>
-    <!-- <router-link :to="{ name: 'Case Study' }">Case Study</router-link> -->
+    <div class="d-flex flex-column">
+      <router-link class="mr-2" :to="{ name: 'Opogo'}">Opogo</router-link>
+      <router-link class="mr-2" :to="{ name: 'Design System'}">Design System</router-link>
+    </div>
+
+
+    <ul>
+      <li>2020 - Product Designer</li>
+      <li>2020 - Experience Haus - Opogo</li>
+      <li>2019 - Corgi</li>
+      <li>2017 - Training</li>
+      <li>2018 - Design System</li>
+      <li>2016 - UI Developer Work</li>
+      <li>2009 - 2012 USM</li>
+    </ul>
+
+    
+    2016 - 2020 UI Developer
+    2020 - Current Product Designer
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti enim expedita similique repudiandae quod repellat error architecto nemo ullam. Laudantium officia commodi saepe consectetur omnis atque, officiis, recusandae maxime sunt facilis rem illum tenetur animi magni voluptate, rerum eligendi consequuntur deserunt! Ipsa quaerat debitis ab numquam facilis minus illum? Harum est vel quos sed iste porro, maiores autem ex delectus neque quibusdam pariatur laudantium. Magni similique dolores, autem impedit adipisci atque accusamus illum tempora voluptatem, totam veritatis facilis, fuga at alias ullam quam expedita iure a aut. Quas inventore, quidem tempore repellat ea labore fugit, ducimus commodi ex eaque fuga molestiae praesentium iure asperiores eligendi minus. Obcaecati error aliquam unde mollitia consequuntur placeat dicta, officia labore repellendus iste ex similique excepturi saepe aliquid! Laborum corrupti vel accusantium, eligendi enim nesciunt consequuntur, ex officia nisi impedit eveniet reprehenderit temporibus maxime repellat amet? Aspernatur amet delectus quis nostrum quisquam corporis natus eos deserunt ab eaque corrupti recusandae nulla, temporibus vel tempore repellat suscipit ratione sit beatae dolores asperiores eum optio ut. Delectus dolores nemo facere sequi autem sunt, non laborum voluptatibus, optio repellat ex incidunt voluptates vel consequatur repudiandae obcaecati, alias accusantium illum earum. Labore, praesentium. Pariatur et dolorem ipsum quibusdam, fugiat, placeat, explicabo illum cum iste ea numquam. Praesentium velit hic reprehenderit cupiditate cum expedita odio? Pariatur, incidunt omnis, recusandae beatae quo consequatur aliquid dolor unde architecto ullam impedit. Vero blanditiis, iusto error dolor delectus ipsum alias magnam aliquid corporis magni a eligendi molestiae mollitia! Inventore molestiae vero, officia facilis error facere labore delectus beatae illum. Ut voluptatibus, reiciendis possimus eveniet iusto perferendis nisi ipsa sapiente excepturi voluptates consequuntur sunt aspernatur sit, velit, beatae illum error quia. Esse commodi quasi tenetur inventore molestias similique perspiciatis fuga ut modi. Sunt reprehenderit porro excepturi illo repellendus animi, inventore dolorem a laudantium in voluptates libero ad dolorum, quia eos! Recusandae quaerat totam culpa qui magni odio eveniet id reprehenderit. Velit ea, at rem necessitatibus magni expedita harum asperiores, praesentium aspernatur, ad minima? Dolorem quos corrupti consequatur, excepturi ratione deleniti ad sint. Consectetur vero dolorem repellendus deserunt a. Culpa ut repudiandae vel velit consequuntur dolores maxime iste provident laudantium perspiciatis exercitationem facere voluptas nostrum tempora omnis delectus, adipisci fugiat perferendis aperiam esse corporis est. Quos doloribus, eligendi modi officia earum laboriosam ducimus ut, consectetur temporibus minima libero! Vero officiis omnis pariatur nesciunt accusamus possimus ex sit itaque explicabo ab consequuntur dolorem maxime quibusdam, exercitationem nostrum molestiae quos enim deleniti iste nobis ducimus. Dolores laudantium maxime, vero optio deleniti repudiandae repellendus voluptatum delectus ratione harum eos voluptates veritatis magnam sit distinctio unde sunt! Delectus culpa aut, commodi nam dignissimos laborum eius non unde labore repellat voluptate sunt assumenda voluptas autem, suscipit incidunt similique! Incidunt reprehenderit mollitia cupiditate, veniam dolor eum dolorem. Illum officiis quo maxime voluptates dolor. Mollitia rem, laborum earum quaerat accusamus pariatur error explicabo recusandae nulla voluptate quasi labore ea? Nostrum possimus nulla harum dicta alias sed, provident aliquam ea sapiente distinctio architecto similique ullam accusamus dignissimos repudiandae nihil cumque sequi unde quibusdam explicabo ad perspiciatis praesentium quia temporibus! Dolore quibusdam nostrum nisi tempore temporibus consequuntur, quisquam, cumque voluptatem, reiciendis tempora cum omnis vero magnam culpa quasi voluptas impedit laboriosam! Necessitatibus, eveniet. Quos, sapiente! Rem reiciendis aliquam quo, quis perferendis quibusdam ab, fugit voluptatem ipsum modi impedit excepturi, aliquid sit sequi aperiam minus ad deleniti. Est minima voluptatibus impedit illum tenetur maiores atque, maxime doloribus molestiae, porro beatae dolor cupiditate molestias minus, velit animi officia nostrum repellendus laborum a alias soluta quae vitae ad. Esse quo dolore molestiae accusamus fugiat quod? Sequi, aut eveniet facere vero explicabo quo impedit, culpa voluptatem perspiciatis molestias expedita.</p>
   </div>

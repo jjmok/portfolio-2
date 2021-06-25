@@ -1,15 +1,17 @@
 <template>
-  <div class="main-view">
+  <CaseStudyReader>
     <h1>Creative</h1>
     <a target="_blank" href="https://codepen.io/JayJay89/full/OKOdma">Charles the CSS Corgi</a>
-  </div>
+  </CaseStudyReader>
 </template>
 
 <script>
+import CaseStudyReader from '@/components/CaseStudyReader.vue'
+
 export default {
   name: 'Creative',
-  props: {
-    msg: String
+  components: {
+    CaseStudyReader
   }
 }
 </script>
