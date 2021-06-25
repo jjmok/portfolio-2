@@ -99,6 +99,8 @@ export default {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    height: $nav-height;
+    padding: 0px $spacer-3;
 
     @include media-breakpoint-up(md) {
       display: none;
@@ -124,7 +126,6 @@ export default {
     top: $nav-height;
     right: 20px;
     padding: 20px;
-    z-index: 1;
   }
 
   .pf-navigation,
@@ -135,10 +136,16 @@ export default {
   .pf-navigation {
     width: 100vw;
     height: $nav-height;
+    transform: translate(0px, 0px);
+    transition: transform $transition-speed ease;
 
     .router-link-active {
       color: white;
       font-weight: bold;
+    }
+
+    .readmode & {
+      transform: translateY(-$nav-height);
     }
 
     @include media-breakpoint-up(md) { 
@@ -146,20 +153,27 @@ export default {
       right: 0;
       top: 0;
       height: 100vh;
+
+      .readmode & {
+        transform: translate($nav-width, 0px);
+      }
     }
   }
 
   .pf-mainview {
     width: 100vw;
-    top: $nav-height;
-    height: calc(100vh - #{$nav-height});
-    z-index: 1;
+    height: 100vh;
+
     @include media-breakpoint-up(md) { 
-      width: calc( 100vw - #{$nav-width} );
-      top: 0;
+      transform: translateY(0px);
       height: 100vh;
+
+      .readmode & {
+        width: 100vw;
+      }
     }
   }
+  
 
   // @include media-breakpoint-up(xs) { ... }
   // @include media-breakpoint-up(sm) { ... }
