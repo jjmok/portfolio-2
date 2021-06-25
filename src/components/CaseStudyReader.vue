@@ -35,7 +35,7 @@ export default {
         this.$router.push('/')
       }
 
-      //disabled button on click to prevent the event from firing twice, goes back two
+      //disabled button on click to prevent the event from firing twice, goes back two pages
       this.isDisabled = true
       readStore.readModeOff()
     }
