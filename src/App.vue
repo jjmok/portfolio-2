@@ -91,10 +91,6 @@ export default {
     overflow: hidden;
     width: 100vw;
     height: 100vh;
-
-    &.readmode {
-      border: 1px solid red;
-    }
   }
 
   // .menu-dropdown {
