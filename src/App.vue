@@ -2,7 +2,7 @@
   <div
     :class="{readmode: readModeStatus}"
     class="main-container">
-    <div class="bg-secondary text-white pf-mainview">
+    <div class="pf-mainview">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component" />
@@ -78,7 +78,7 @@ export default {
     display: flex;
     align-items: center;
     position: relative;
-    height: $nav-height;
+    height: var(--nav-height);
     padding: 0px $spacer-3;
 
     @include media-breakpoint-up(md) {
@@ -93,16 +93,6 @@ export default {
     height: 100vh;
   }
 
-  // .menu-dropdown {
-  //   display: flex;
-  //   flex-direction: column;
-  //   background-color: red;
-  //   position: absolute;
-  //   top: $nav-height;
-  //   right: 20px;
-  //   padding: 20px;
-  // }
-
   .pf-navigation,
   .pf-mainview {
     position: absolute;
@@ -110,9 +100,9 @@ export default {
 
   .pf-navigation {
     width: 100vw;
-    height: $nav-height;
+    height: var(--nav-height);
     transform: translate(0px, 0px);
-    transition: transform $transition-speed ease;
+    transition: transform var(--trans-speed) ease;
 
     .router-link-active {
       color: white;
@@ -120,17 +110,17 @@ export default {
     }
 
     .readmode & {
-      transform: translateY(-$nav-height);
+      transform: translateY(calc(var(--nav-height) * -1));
     }
 
     @include media-breakpoint-up(md) { 
-      width: $nav-width;
+      width: var(--nav-width);
       right: 0;
       top: 0;
       height: 100vh;
 
       .readmode & {
-        transform: translate($nav-width, 0px);
+        transform: translate(var(--nav-width), 0px);
       }
     }
   }
@@ -138,6 +128,7 @@ export default {
   .pf-mainview {
     width: 100vw;
     height: 100vh;
+    background-color: gray;
 
     @include media-breakpoint-up(md) { 
       transform: translateY(0px);
@@ -148,13 +139,6 @@ export default {
       }
     }
   }
-  
-
-  // @include media-breakpoint-up(xs) { ... }
-  // @include media-breakpoint-up(sm) { ... }
-  // @include media-breakpoint-up(md) { ... }
-  // @include media-breakpoint-up(lg) { ... }
-  // @include media-breakpoint-up(xl) { ... }
 </style>
 
 

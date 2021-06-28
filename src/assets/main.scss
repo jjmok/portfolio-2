@@ -1,5 +1,12 @@
 @import "@/assets/prerequisite";
 
+:root {
+  --nav-width: 200px;
+  --nav-height: 65px;
+  --trans-speed: 0.3s;
+  --mainview-padding: #{$spacer-5};
+}
+
 body { 
   font-family: 'Poppins', sans-serif; 
 }
@@ -9,13 +16,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .main-view {
-  padding: $spacer-5;
-  padding-top: calc(#{$nav-height} + #{$spacer-5});
+  padding: var(--mainview-padding);
+  padding-top: calc(var(--nav-height) + var(--mainview-padding));
   height: 100%;
   overflow: scroll;
   
   @include media-breakpoint-up(md) {
-    padding-right: calc(#{$nav-width} + #{$spacer-5});
+    padding-top: $spacer-5;
+    padding-right: calc(var(--nav-width) + var(--mainview-padding));
   }
 }
 
@@ -40,12 +48,12 @@ h1,h2,h3,h4,h5,h6 {
 
 .fade-enter-active {
   transition: 
-    opacity $transition-speed ease-out,
-    transform $transition-speed ease-out;
+    opacity var(--trans-speed) ease-out,
+    transform var(--trans-speed) ease-out;
 }
 
 .fade-leave-active {
   transition: 
-    opacity $transition-speed ease-in,
-    transform $transition-speed ease-in;
+    opacity var(--trans-speed) ease-in,
+    transform var(--trans-speed) ease-in;
 }

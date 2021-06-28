@@ -23,7 +23,6 @@ import {readStore} from "@/store/read-store";
 export default {
   name: 'CaseStudyReader',
   props: {
-    studyName: String
   },
   methods: {
     goBack: function () {
@@ -54,17 +53,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
   @import "@/assets/prerequisite";
-  
-  $close-placement: 7rem;
 
   .close {
+    --close-placement: 7rem;
+
     position: sticky;
     top: 20px;
     right: 20px;
     font-size: 4.5rem;
     text-shadow: none;
     color: white;
-    margin-right: -$close-placement;
+    margin-right: calc(var(--close-placement) * -1);
     margin-top: -4rem;
   }
 
@@ -75,7 +74,7 @@ export default {
     left: 0;
     height: 100vh;
     width: 100%;
-    // will-change: transform, opacity;
+    will-change: opacity, transform;
   }
 
   .article-container {

@@ -8,7 +8,8 @@ $spacer-3: $spacer * 1;
 $spacer-4: $spacer * 1.5;
 $spacer-5: $spacer * 3;
 
-$nav-width: 200px;
-$nav-height: 65px;
-
-$transition-speed: 0.25s;
+// @include media-breakpoint-up(xs) { ... }
+// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
