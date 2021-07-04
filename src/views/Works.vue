@@ -1,8 +1,8 @@
 <template>
   <div class="main-view">
-    <h1>Works</h1>
+    <h1>Past Works</h1>
     
-    <div v-for="(caseStudy, index) in cases" :key="index">
+    <div v-for="(caseStudy, index) in getAllRoutes" :key="index">
       <CaseStudyCard 
         :study-name="caseStudy"/>
     </div>
@@ -26,9 +26,18 @@ export default {
   props: {
     msg: String,
   },
+  computed: {
+    getAllRoutes: function () {
+      const routes = this.$router.getRoutes()
+      const caseStudies = routes
+        .filter(article => article.path.startsWith("/works/"))
+        .map(article => article.name)
+      return caseStudies
+    }
+  },
   data: function () {
     return {
-      cases: ["Design System", "Creative", "Training"]
+      // cases: ["Design System", "Creative", "Training", "Illustrations"]
     }
   }
 }

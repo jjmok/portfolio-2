@@ -1,8 +1,8 @@
 <template>
   <div class="main-view">
-    <h1>Case Study</h1>
+    <h1>Product Designer's Case Studies</h1>
 
-    <div v-for="(caseStudy, index) in cases" :key="index">
+    <div v-for="(caseStudy, index) in getAllRoutes" :key="index">
       <CaseStudyCard 
         :study-name="caseStudy"/>
     </div>
@@ -27,10 +27,17 @@ export default {
     msg: String,
   },
   data: function () {
-    return {
-      cases: ["Opogo", "Pikto"]
+    return {}
+  },
+  computed: {
+    getAllRoutes: function () {
+      const routes = this.$router.getRoutes()
+      const caseStudies = routes
+        .filter(article => article.path.startsWith("/case-study/"))
+        .map(article => article.name)
+      return caseStudies
     }
-  }
+  },
 };
 
 // To add a new case study page, create a new component, add it to data above and on the router paths

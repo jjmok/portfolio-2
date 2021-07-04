@@ -1,7 +1,7 @@
 <template>
   <CaseStudyReader>
-    <h1>Pikto Case Study 2</h1>
-    <p>Pikto Stuff</p>
+    <h1>Color Scheme</h1>
+    <p>Detail about Color Schemes</p>
   </CaseStudyReader>
 </template>
 
@@ -9,10 +9,10 @@
 import CaseStudyReader from '@/components/CaseStudyReader.vue'
 
 export default {
-  name: 'Pikto',
+  name: 'Creative',
   components: {
     CaseStudyReader
-  },
+  }
 }
 </script>
 

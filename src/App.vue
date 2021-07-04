@@ -2,7 +2,7 @@
   <div
     :class="{readmode: readModeStatus}"
     class="main-container">
-    <div class="pf-mainview">
+    <div class="pf-mainview text-white">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component" />

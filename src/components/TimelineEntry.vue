@@ -1,18 +1,19 @@
 <template>
-
-  <div class="timeline-entry">
+  <router-link
+    :to="{ name: LinkTo}"
+    class="timeline-entry">
     <div class="timeline-year">
       {{ year }}
     </div>
     <div class="timeline-position">
       <p class="h4">
-        {{ position }}
+        {{ title }}
       </p>
       <p>
         <slot/>
       </p>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -20,7 +21,8 @@ export default {
   name: 'TimelineEntry',
   props: {
     year: String,
-    position: String
+    title: String,
+    LinkTo: String,
   }
 }
 </script>
@@ -43,6 +45,17 @@ export default {
     padding: var(--timeline-top-padding) 0;
     position: relative;
     display: flex;
+    color: white;
+    transform: translateY(0px);
+    transition: 
+      background-color 0.2s ease,
+      transform 0.2s ease;
+
+    &:hover {
+      text-decoration: none;
+      // background-color: lightgrey;
+      transform: translateY(-4px);
+    }
 
     &::after,
     &::before {
@@ -57,8 +70,7 @@ export default {
       border-radius: 50%;
       background-color: blue;
       left: var(--timeline-year-width);
-      top: calc(var(--timeline-top-padding) + var(--timeline-circ-width) / 2);
-      transform: translateY(-50%);
+      top: calc(var(--timeline-top-padding) + 4px) ;
     }
 
     &::before {

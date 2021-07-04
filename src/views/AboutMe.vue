@@ -5,55 +5,60 @@
     <div class="time-block">
       <div class="status">
         <span class="h2">Product Designer in Piktochart</span>
-        <!-- <span>2020 - Current</span> -->
       </div>
       <timeline-entry 
         year="Currently"
-        position="Product Designer">
-        <p>information as Product Designer</p>
+        title="Pikto Next"
+        LinkTo="Pikto Next">
+        Piktonext is the new editor for Piktochart
+      </timeline-entry>
+      <timeline-entry 
+        year="2021"
+        title="Color Scheme"
+        LinkTo="Color Scheme">
+        Color Scheme is the next version of the Piktonext App
       </timeline-entry>
       <timeline-entry 
         year="2020 Dec"
-        position="Opogo Case Study">
-        <router-link :to="{ name: 'Opogo'}">Experience Haus - Opogo</router-link>
+        title="Opogo"
+        LinkTo="Opogo">
+        Opogo is a full case study
       </timeline-entry>
     </div>
 
     <div class="time-block">
       <div class="status">
         <span class="h2">UI Developer in Piktochart</span>
-        <!-- <span>2016 - 2020</span> -->
       </div>
-      <timeline-entry 
+      <timeline-entry
+        href="https://codepen.io/JayJay89/full/aNmoYR"
+        target="_blank"
         year="2019"
-        position="Charles the CSS Corgi">
-        <a target="_blank" href="https://codepen.io/JayJay89/full/aNmoYR">Charles the CSS Corgi</a>
+        title="Charles the CSS Corgi">
+        Charles is made from CSS
       </timeline-entry>
       <timeline-entry 
         year="2018-2019"
-        position="Design System">
-        <router-link class="mr-2" :to="{ name: 'Design System'}">Design System</router-link>
+        title="Design System"
+        LinkTo="Design System">
+        Working as UI dev I worked with establishing the initial design system
       </timeline-entry>
       <timeline-entry 
         year="2017"
-        position="Training">
-        <router-link class="mr-2" :to="{ name: 'Training'}">Training</router-link>
-      </timeline-entry>
-      <timeline-entry 
-        year="2016"
-        position="UI Developer">
-        <router-link class="mr-2" :to="{ name: 'Training'}">UI Developer Work</router-link>
+        title="Training"
+        LinkTo="Training">
+        I've conducted CSS trainings
       </timeline-entry>
     </div>
 
     <div class="time-block">
       <div class="status">
         <span class="h2">3D Artist/Illustration Artist</span>
-        <!-- <span>2016 - 2020</span> -->
       </div>
       <timeline-entry 
         year="2019"
-        position="3D Artist/Illustration">
+        title="3D/Illustration"
+        LinkTo="Illustrations">
         To be worked on...
       </timeline-entry>
     </div>
@@ -65,7 +70,7 @@
       </div>
       <timeline-entry 
         year="2009 - 2012"
-        position="New Media Technology">
+        title="New Media Technology">
         to be worked on
       </timeline-entry>
     </div>

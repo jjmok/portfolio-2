@@ -2,12 +2,15 @@ import { createRouter, createWebHistory } from 'vue-router'
 // import Home from '../views/Home.vue'
 import CaseStudy from '../views/CaseStudy.vue'
 import AboutMe from "../views/AboutMe.vue";
-import Creative from "../views/articles/Creative.vue";
 import Works from "../views/Works.vue";
-import Training from "../views//articles/Training.vue";
+
+import Creative from "../views/articles/Creative.vue";
+import Illustrations from "../views/articles/Illustrations.vue";
+import Training from "../views/articles/Training.vue";
 import Opogo from "../views/articles/Opogo.vue";
-import Pikto from "../views/articles/Pikto.vue";
+import PiktoNext from "../views/articles/PiktoNext.vue";
 import DesignSystem from "../views/articles/DesignSystem.vue";
+import ColorScheme from "../views/articles/ColorScheme.vue";
 
 const routes = [
   { 
@@ -30,9 +33,14 @@ const routes = [
         component: Opogo
       },
       {
-        path: "pikto",
-        name: "Pikto",
-        component: Pikto
+        path: "pikto-next",
+        name: "Pikto Next",
+        component: PiktoNext
+      },
+      {
+        path: "color-scheme",
+        name: "Color Scheme",
+        component: ColorScheme
       }
     ]
   },
@@ -50,6 +58,11 @@ const routes = [
         path: "creative",
         name: "Creative",
         component: Creative
+      },
+      { 
+        path: "illustrations",
+        name: "Illustrations",
+        component: Illustrations
       },
       { 
         path: "training",

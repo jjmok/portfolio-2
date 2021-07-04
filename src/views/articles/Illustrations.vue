@@ -1,7 +1,6 @@
 <template>
   <CaseStudyReader>
-    <h1>Design System</h1>
-    <p>Design System Stuff</p>
+    <h1>Illustrations</h1>
   </CaseStudyReader>
 </template>
 
@@ -9,7 +8,7 @@
 import CaseStudyReader from '@/components/CaseStudyReader.vue'
 
 export default {
-  name: 'Design System',
+  name: 'Training',
   components: {
     CaseStudyReader
   }

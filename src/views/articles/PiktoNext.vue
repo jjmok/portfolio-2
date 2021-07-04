@@ -1,7 +1,7 @@
 <template>
   <CaseStudyReader>
-    <h1>Design System</h1>
-    <p>Design System Stuff</p>
+    <h1>Pikto Next Case Study 2</h1>
+    <p>Pikto Stuff</p>
   </CaseStudyReader>
 </template>
 
@@ -9,10 +9,10 @@
 import CaseStudyReader from '@/components/CaseStudyReader.vue'
 
 export default {
-  name: 'Design System',
+  name: 'PiktoNext',
   components: {
     CaseStudyReader
-  }
+  },
 }
 </script>
 
