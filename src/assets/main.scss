@@ -5,6 +5,8 @@
   --nav-height: 65px;
   --trans-speed: 0.3s;
   --mainview-padding: #{$spacer-5};
+  //z-index
+  --zindex-close-button: 2;
 }
 
 body { 

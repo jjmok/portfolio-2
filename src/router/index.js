@@ -5,7 +5,7 @@ import AboutMe from "../views/AboutMe.vue";
 import Works from "../views/Works.vue";
 
 import Creative from "../views/articles/Creative.vue";
-import Illustrations from "../views/articles/Illustrations.vue";
+import Graphical from "../views/articles/Graphical.vue";
 import Training from "../views/articles/Training.vue";
 import Opogo from "../views/articles/Opogo.vue";
 import PiktoNext from "../views/articles/PiktoNext.vue";
@@ -60,9 +60,9 @@ const routes = [
         component: Creative
       },
       { 
-        path: "illustrations",
-        name: "Illustrations",
-        component: Illustrations
+        path: "graphical",
+        name: "Graphical",
+        component: Graphical
       },
       { 
         path: "training",

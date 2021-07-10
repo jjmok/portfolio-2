@@ -63,7 +63,7 @@
     <h2 class="h4">Competitors</h2>
     <p>Opogo is not the only app out there that's trying to tackle this issue. Apps such as Zen Educate, Engage Education, SickCover were also competing in the same field. While these aforementioned apps shared certain similarities with Opogo. We are more interested in what sets them apart</p>
 
-    <img class="border rounded img-fluid" src="@/assets/img/competitive-research.jpg" alt="competitive-research">
+    <img class="border rounded img-fluid" src="@/assets/img/opogo/competitive-research.jpg" alt="competitive-research">
     <ul>
       <li>
         <strong>Engage Education</strong> - iDay provides overseas teachers and all-expenses-paid week-long trips where you get to meet and interview with multiple schools.
@@ -98,7 +98,7 @@
 
     <h2 class="h4">Forming Personas</h2>
     <div class="d-flex">
-      <img class="border rounded img-fluid img-500 mr-3" src="@/assets/img/personas.png" alt="personas">
+      <img class="border rounded img-fluid img-500 mr-3" src="@/assets/img/opogo/personas.png" alt="personas">
       <p>For each interviewee, we present their feedbacks in the structure shown on the image. With more information gathered from different interviewees, we'll be able to see trends or common behaviors that will help us to form our Personas</p>
     </div>
 
@@ -106,7 +106,7 @@
 
     <h2 class="h4">Forming Personas - Empathy Maps</h2>
     <div class="d-flex">
-      <img class="border rounded img-fluid img-500 mr-3" src="@/assets/img/empathy-map.png" alt="empathy-map">
+      <img class="border rounded img-fluid img-500 mr-3" src="@/assets/img/opogo/empathy-map.png" alt="empathy-map">
       <div>
         <p>
           We also created an empathy map that puts ourselves in the shoes of the teachers
@@ -126,9 +126,9 @@
     <p>The previous maps paint a common behavioral pattern among our interviewees, and this leads to the formulation of 3 personas.</p>
 
     <div class="d-flex flex-column">
-      <img class="border rounded img-fluid img-700 mb-2" src="@/assets/img/persona1.jpg" alt="persona1">
-      <img class="border rounded img-fluid img-700 mb-2" src="@/assets/img/persona2.jpg" alt="persona2">
-      <img class="border rounded img-fluid img-700 mb-2" src="@/assets/img/persona3.jpg" alt="persona3">
+      <img class="border rounded img-fluid img-700 mb-2" src="@/assets/img/opogo/persona1.jpg" alt="persona1">
+      <img class="border rounded img-fluid img-700 mb-2" src="@/assets/img/opogo/persona2.jpg" alt="persona2">
+      <img class="border rounded img-fluid img-700 mb-2" src="@/assets/img/opogo/persona3.jpg" alt="persona3">
     </div>
 
     <p>Due to the interest of time, we decided to form our solution based on 1 persona: The Rep for Temps AKA the temporary supply teacher.</p>
@@ -140,7 +140,7 @@
       <p>
         Next, we took a deeper look into the journey of our persona and how she goes through a journey to look for a job to gain a better understanding of the flow that she went through. This approach focuses more on the tasks that a teacher might do at a specific stage of their journey.
       </p>
-      <img class="border rounded img-fluid" src="@/assets/img/task-analysis.png" alt="task-analysis">
+      <img class="border rounded img-fluid" src="@/assets/img/opogo/task-analysis.png" alt="task-analysis">
     </div>
     
     <h2 class="h4">User Journey - Experience Map</h2>
@@ -149,7 +149,7 @@
         Apart from that, we also tried another approach to understand our persona's journey better. This method explores the user journey on a more empathetic level.
       </p>
       <p>From this map work, the low point that stood out to us was the last one: supply teachers feels anxious on their first day to school.</p>
-      <img class="border rounded img-fluid" src="@/assets/img/experience-map.png" alt="experience-map">
+      <img class="border rounded img-fluid" src="@/assets/img/opogo/experience-map.png" alt="experience-map">
     </div>
   
     <h2>User Stories</h2>
@@ -160,7 +160,7 @@
       <blockquote class="blockquote bg-primary text-white p-4 italic">
         As a _(user)_, I would like to __ (action)___ so that I can __ (what is success?)___.
       </blockquote>
-      <img class="border rounded img-fluid" src="@/assets/img/user-stories.png" alt="user-stories">
+      <img class="border rounded img-fluid" src="@/assets/img/opogo/user-stories.png" alt="user-stories">
     </div>
 
     <h2>Job Stories</h2>
@@ -171,7 +171,7 @@
         When __(trigger) __ , I want to __ (action)___ , so I can __ (success criteria)___
       </blockquote>
       <p></p>
-      <img class="border rounded img-fluid" src="@/assets/img/job-stories.png" alt="job-stories">
+      <img class="border rounded img-fluid" src="@/assets/img/opogo/job-stories.png" alt="job-stories">
     </div>
     
     <h2>Problem Statement</h2>
@@ -240,17 +240,17 @@
     <div class="d-flex">
       <div class="mr-5">
         <h5>School Communication (Storyboard)</h5>
-        <img class="border rounded img-fluid img-500" src="@/assets/img/school-communication.jpeg" alt="school-communication">
+        <img class="border rounded img-fluid img-500" src="@/assets/img/opogo/school-communication.jpeg" alt="school-communication">
       </div>
   
       <div class="mr-5">
         <h5>Search Filter (Ideation)</h5>
-        <img class="border rounded img-fluid img-500" src="@/assets/img/search-filter.jpeg" alt="search-filter">
+        <img class="border rounded img-fluid img-500" src="@/assets/img/opogo/search-filter.jpeg" alt="search-filter">
       </div>
       
       <div>
         <h5>Community (Ideation)</h5>
-        <img class="border rounded img-fluid img-500" src="@/assets/img/community.jpeg" alt="community">
+        <img class="border rounded img-fluid img-500" src="@/assets/img/opogo/community.jpeg" alt="community">
       </div>
     </div>
 
@@ -262,7 +262,7 @@
 
     <div class="row">
       <div class="col-9">
-        <img class="border rounded img-fluid" src="@/assets/img/user-flow-1.png" alt="">
+        <img class="border rounded img-fluid" src="@/assets/img/opogo/user-flow-1.png" alt="">
       </div>
       <div class="col-3">
         <p>I went through several variations before settling for this flow. Due to our time constraints, I kept the user flow straightforward and within our capabilities to develop.</p>
@@ -272,16 +272,16 @@
       
       <!-- <div class="col">
         <p>Mobile App - Teachers looking for Schools</p>
-        <img class="border rounded img-fluid" src="@/assets/img/user-flow-2.png" alt="">
+        <img class="border rounded img-fluid" src="@/assets/img/opogo/user-flow-2.png" alt="">
       </div> -->
 
     <h5>Low Fidelity</h5>
-    <img class="border rounded img-fluid" src="@/assets/img/low-fidelity-desktop.png" alt="low-fidelity-desktop">
-    <!-- <img class="border rounded img-fluid " src="@/assets/img/low-fidelity-mobile.png" alt="low-fidelity-mobile"> -->
+    <img class="border rounded img-fluid" src="@/assets/img/opogo/low-fidelity-desktop.png" alt="low-fidelity-desktop">
+    <!-- <img class="border rounded img-fluid " src="@/assets/img/opogo/low-fidelity-mobile.png" alt="low-fidelity-mobile"> -->
     <p>The low fidelity wireframes are created in Figma to visualize the process of looking for a teacher. Most of the details aren't refined and it's focused on building out the important interactive components. A digital prototype was created based on this screen next to get feedback from a usability test </p>
 
     <h5>Usability Test</h5>
-    <img class="border rounded img-fluid" src="@/assets/img/prototype.png" alt="prototype">
+    <img class="border rounded img-fluid" src="@/assets/img/opogo/prototype.png" alt="prototype">
 
     <p>The main goal of this test is to identify any usability issues that this prototype might have. It's also within my interest to find out if our users had any other expectations or needs. </p>
     <p>Our participants are asked to put themselves in the role of a cover manager. They are tasked to find a temporary daily supply teacher to cover for them with the provided prototype</p>
@@ -294,17 +294,17 @@
     
     <p>The participant expects the system to ONLY display teachers that has these two qualifications (Left Image), as its meant to filter out teachers that has these two criterias and not show every possible results</p>
 
-    <img class="col-12" src="@/assets/img/expectation.png" alt="expectations">
+    <img class="col-12" src="@/assets/img/opogo/expectation.png" alt="expectations">
 
     <h2>Hi-Fidelity Mockup</h2>
-    <img class="border rounded img-fluid" src="@/assets/img/hi-fidelity-mockup.png" alt="hi-fidelity-mockup">
+    <img class="border rounded img-fluid" src="@/assets/img/opogo/hi-fidelity-mockup.png" alt="hi-fidelity-mockup">
     
     <p>Finally, this lead to the <a href="https://www.figma.com/proto/vbqZO7PzMR5a8jWP6SKHOH/Experience-Haus-Team-4?node-id=366%3A20969&viewport=-318%2C272%2C0.06906378269195557&scaling=contain">high-fidelity mockup</a>.</p>
     <p>This design follows conventional tag searchbar designs so as not to throw any users off with something they are unfamiliar with. </p>
 
     <p>Following the the brand guidelines that Opogo has provided us, I have made a few UI changes apart from creating the searchbar.</p>
     
-    <img class="rounded img-fluid img-500" src="@/assets/img/teacher-card.png" alt="teacher-card">
+    <img class="rounded img-fluid img-500" src="@/assets/img/opogo/teacher-card.png" alt="teacher-card">
     <ul>
       <li>Teachers are also tag as <strong>Daily Supply</strong>, <strong>Long Term Supply</strong>, or <strong>Permanent</strong>. As these are recurring tags that are seen throughout each card, I've proposed replacing the tags with icons to create more space for other components. These icons would also have tooltips to show managers what they represent.</li>
       <li>The tags are separated into 3 colors for readability: blue for age group, grey for subject, and light green for special needs qualifications</li>
@@ -312,7 +312,7 @@
     </ul>
 
     <h5>Original Design</h5>
-    <img class="border rounded img-fluid" src="@/assets/img/opogo-talent.png" alt="opogo-talent">
+    <img class="border rounded img-fluid" src="@/assets/img/opogo/opogo-talent.png" alt="opogo-talent">
 
     <p>The proposed solution doesn't require major UI overhaul. It's a low cost approach to display better matches for both school and teachers, which can leads to increase active users.</p>
     

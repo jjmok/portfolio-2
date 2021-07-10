@@ -56,15 +56,15 @@ export default {
 
   .close {
     --close-placement: 7rem;
-
+    z-index: var(--zindex-close-button);
     position: sticky;
     top: 20px;
     right: 20px;
     font-size: 4.5rem;
     text-shadow: none;
     color: white;
-    margin-right: calc(var(--close-placement) * -1);
-    margin-top: -4rem;
+    // margin-right: calc(var(--close-placement) * -1);
+    // margin-top: -4rem;
   }
 
   .case-container {
@@ -78,6 +78,9 @@ export default {
   }
 
   .article-container {
-    padding: 120px 60px 0;
+    padding: 25px;
+    @include media-breakpoint-up(md) {
+      padding: 120px 60px 0;
+    }
   }
 </style>

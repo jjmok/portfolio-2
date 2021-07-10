@@ -58,7 +58,7 @@
       <timeline-entry 
         year="2019"
         title="3D/Illustration"
-        LinkTo="Illustrations">
+        LinkTo="Graphical">
         To be worked on...
       </timeline-entry>
     </div>

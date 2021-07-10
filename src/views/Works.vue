@@ -37,7 +37,6 @@ export default {
   },
   data: function () {
     return {
-      // cases: ["Design System", "Creative", "Training", "Illustrations"]
     }
   }
 }
