@@ -32,25 +32,33 @@ export default {
   @import "@/assets/prerequisite";
 
   .timeline-entry {
-    --timeline-year-width: 100px;
+    --timeline-year-width: 0px;
     --line-width: 2px;
-    --timeline-circ-width: 20px;
+    --timeline-circ-width: 16px;
     --timeline-padding: #{$spacer-3};
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
       --timeline-year-width: 125px;
+      --timeline-circ-width: 20px;
+      --line-width: 3px;
     }
 
     margin-bottom: $spacer-3;
     position: relative;
     display: flex;
     color: white;
+    flex-direction: column;
     transform: translateY(0px);
     transition: 
       background-color 0.2s ease,
       transform 0.2s ease;
     text-decoration: none;
     
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+    }
+
+
     &:hover {
       text-decoration: none;
       // background-color: lightgrey;
@@ -90,15 +98,24 @@ export default {
   }
 
   .timeline-year {
+    margin-left: calc(var(--timeline-circ-width) + #{$spacer-3});
     width: var(--timeline-year-width);
     display: flex;
-    justify-content: flex-end;
-    padding-right: $spacer-3;
+
+    @include media-breakpoint-up(sm) {
+      margin: 0;
+      padding-right: $spacer-3;
+      justify-content: flex-end;
+    }
   }
 
   .timeline-position {
-    width: calc(100% - var(--timeline-year-width));
-    margin-left: calc(var(--timeline-circ-width) + #{$spacer-3});
-    padding: 0px var(--timeline-padding);
+    padding-left: calc(var(--timeline-circ-width) + #{$spacer-3});
+
+    @include media-breakpoint-up(sm) {
+      width: calc(100% - var(--timeline-year-width));
+      margin-left: calc(var(--timeline-circ-width) + #{$spacer-3});
+      padding: 0px var(--timeline-padding);
+    }  
   }
 </style>
