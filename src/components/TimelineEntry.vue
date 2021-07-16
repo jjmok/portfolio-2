@@ -29,14 +29,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @import "@/assets/custom-variables";
+  @import "@/assets/prerequisite";
 
   .timeline-entry {
     --timeline-year-width: 100px;
     --line-width: 2px;
     --timeline-circ-width: 20px;
     --timeline-padding: #{$spacer-3};
-    --timeline-margin: #{$spacer-3};
 
     @include media-breakpoint-up(md) {
       --timeline-year-width: 125px;
@@ -71,13 +70,13 @@ export default {
       border-radius: 50%;
       background-color: blue;
       left: var(--timeline-year-width);
-      top: calc(var(--timeline-padding) + 4px) ;
+      top: 4px;
     }
 
     &::before {
       background-color: red;
       width: var(--line-width);
-      height: calc(100% + var(--timeline-margin) + var(--timeline-padding));
+      height: calc(100%);
       left: calc(var(--timeline-circ-width) / 2 - (var(--line-width) / 2) + var(--timeline-year-width));
       top: calc(var(--timeline-padding) + var(--timeline-circ-width) / 2);
     }
@@ -99,8 +98,7 @@ export default {
 
   .timeline-position {
     width: calc(100% - var(--timeline-year-width));
-    padding: var(--timeline-padding) 0;
-    padding-left: calc(var(--timeline-circ-width) + #{$spacer-3});
-    background-color: $gray-300;
+    margin-left: calc(var(--timeline-circ-width) + #{$spacer-3});
+    padding: 0px var(--timeline-padding);
   }
 </style>
