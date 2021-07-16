@@ -111,6 +111,7 @@ export default {
 
     .readmode & {
       transform: translateY(calc(var(--nav-height) * -1));
+      z-index: -1;
     }
 
     @include media-breakpoint-up(md) { 

@@ -1,6 +1,6 @@
 <template>
   <div class="main-view">
-    <h3 class="mb-2">Hi! I'm JJ, and I'm currently working as a...</h3>
+    <h2 class="mb-2">Hi! I'm JJ, and I'm currently working as a...</h2>
 
     <div class="time-block">
       <div class="status">

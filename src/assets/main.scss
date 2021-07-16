@@ -1,10 +1,15 @@
-@import "@/assets/prerequisite";
+
+
+@import "custom-variables";
+@import "node_modules/bootstrap/scss/bootstrap";
 
 :root {
   --nav-width: 200px;
   --nav-height: 65px;
   --trans-speed: 0.3s;
-  --mainview-padding: #{$spacer-5};
+  --mainview-padding: #{$spacer-3};
+
+
   //z-index
   --zindex-close-button: 2;
 }
@@ -24,6 +29,7 @@ h1,h2,h3,h4,h5,h6 {
   overflow: scroll;
   
   @include media-breakpoint-up(md) {
+    --mainview-padding: #{$spacer-5};
     padding-top: $spacer-5;
     padding-right: calc(var(--nav-width) + var(--mainview-padding));
   }
