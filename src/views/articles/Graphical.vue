@@ -90,7 +90,7 @@ export default {
 .image-container {
   margin: 0 auto 120px;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 30px;
 
   > img {
@@ -102,6 +102,7 @@ export default {
     height: 100%;
     transition: transform 0.3s ease-out;
     background-color: $gray-800;
+    margin-bottom: 12px;
 
     &:hover {
       cursor: pointer;
@@ -117,8 +118,7 @@ export default {
     grid-gap: 30px;
     padding: $spacer-3 0;
     margin-bottom: $spacer-5;
-    // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-template-columns: repeat(12, 1fr);
+    
     width: 90%;
   }
 }
