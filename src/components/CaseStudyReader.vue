@@ -81,7 +81,7 @@ export default {
     padding: 25px;
     color: $gray-200;
     
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding: 120px 60px 0;
     }
   }
