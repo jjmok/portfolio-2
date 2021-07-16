@@ -36,11 +36,17 @@ export default {
     --line-width: 2px;
     --timeline-circ-width: 16px;
     --timeline-padding: #{$spacer-3};
+    --timeline-line-height: calc(100% + var(--timeline-circ-width) / 2);
+    --timeline-circ-top: 2px;
+    --timeline-line-top-pos: var(--timeline-padding);
 
     @include media-breakpoint-up(sm) {
       --timeline-year-width: 125px;
       --timeline-circ-width: 20px;
       --line-width: 3px;
+      --timeline-line-height: calc(100% + var(--timeline-padding));
+      --timeline-circ-top: calc(2px + var(--timeline-padding));
+      --timeline-line-top-pos: calc(var(--timeline-padding) + var(--timeline-circ-width) / 2);
     }
 
     margin-bottom: $spacer-3;
@@ -58,10 +64,8 @@ export default {
       flex-direction: row;
     }
 
-
     &:hover {
       text-decoration: none;
-      // background-color: lightgrey;
       transform: translateY(-4px);
     }
 
@@ -78,24 +82,16 @@ export default {
       border-radius: 50%;
       background-color: blue;
       left: var(--timeline-year-width);
-      top: 4px;
-      // left: 0;
-      // top: 0;
-      @include media-breakpoint-up(sm) {
-        top: calc(var(--timeline-padding) + 4px);
-      }
+      top: var(--timeline-circ-top);
     }
 
     &::before {
       background-color: red;
       width: var(--line-width);
-      height: calc(100%);
+      height: var(--timeline-line-height);
       left: calc(var(--timeline-circ-width) / 2 - (var(--line-width) / 2) + var(--timeline-year-width));
-      top: calc(var(--timeline-padding) + var(--timeline-circ-width) / 2);
-
-      @include media-breakpoint-up(sm) {
-        height: calc(var(--timeline-padding) + 100%);
-      }
+      // top: 
+      top: var(--timeline-line-top-pos);
     }
 
     &:last-child {
@@ -110,6 +106,7 @@ export default {
     margin-left: calc(var(--timeline-circ-width) + #{$spacer-3});
     width: 100%;
     display: flex;
+    color: $primary;
 
     @include media-breakpoint-up(sm) {
       margin: 0;
@@ -121,14 +118,14 @@ export default {
   }
 
   .timeline-position {
-    padding: $spacer-3;
+    padding: var(--timeline-padding);
     padding-left: calc(var(--timeline-circ-width) + #{$spacer-3});
-    background-color: $gray-600;
+    background-color: $gray-500;
+    border-radius: 4px;
+    margin-left: calc(var(--timeline-circ-width) + #{$spacer-3});
 
     @include media-breakpoint-up(sm) {
       width: calc(100% - var(--timeline-year-width));
-      margin-left: calc(var(--timeline-circ-width) + #{$spacer-3});
-      padding: var(--timeline-padding);
     }  
   }
 </style>

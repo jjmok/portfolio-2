@@ -79,6 +79,8 @@ export default {
 
   .article-container {
     padding: 25px;
+    color: $gray-200;
+    
     @include media-breakpoint-up(md) {
       padding: 120px 60px 0;
     }

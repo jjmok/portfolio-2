@@ -2,7 +2,7 @@
   <div
     :class="{readmode: readModeStatus}"
     class="main-container">
-    <div class="pf-mainview text-white">
+    <div class="pf-mainview">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component" />
@@ -10,9 +10,10 @@
       </router-view>
     </div>
     
-    <div class="bg-warning pf-navigation">
+    <div class="pf-navigation">
       <nav class="pf-desktop-nav">
-        <router-link 
+        <router-link
+          class="h4 mb-4 text-warning"
           v-for="(page, index) in pages" 
           :key="index"
           :to="{ name: page }"> 
@@ -21,7 +22,7 @@
       </nav>
       <nav class="pf-mobile-nav">
         <router-link
-          class="mr-3"
+          class="h5 m-0 mx-2 text-warning"
           v-for="(page, index) in pages" 
           :key="index"
           :to="{ name: page }"> 
@@ -66,6 +67,7 @@ export default {
   }
 
   .pf-desktop-nav {
+    padding-top: $spacer-5;
     display: none;
 
     @include media-breakpoint-up(md) {
@@ -80,6 +82,7 @@ export default {
     position: relative;
     height: var(--nav-height);
     padding: 0px $spacer-3;
+    background-color: $gray-500;
 
     @include media-breakpoint-up(md) {
       display: none;
@@ -129,7 +132,8 @@ export default {
   .pf-mainview {
     width: 100vw;
     height: 100vh;
-    background-color: gray;
+    background-color: $gray-600;
+    color: $gray-200;
 
     @include media-breakpoint-up(md) { 
       transform: translateY(0px);

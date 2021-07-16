@@ -91,16 +91,5 @@ export default {
     display: flex;
     flex-direction: column;
     margin-bottom: $spacer-5;
-
-    @include media-breakpoint-up(md) {
-      display: inline-flex;
-      width: 100%;
-    }
   }
-
-  .status {
-    display: flex;
-    flex-direction: column;
-  }
-
 </style>

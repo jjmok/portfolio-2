@@ -5,12 +5,17 @@
   --nav-width: 200px;
   --nav-height: 65px;
   --trans-speed: 0.3s;
-  --mainview-padding: #{$spacer-3};
-
+  --mainview-padding: #{$spacer-5};
 
   //z-index
   --zindex-close-button: 2;
+
+  @include media-breakpoint-up(md) {
+    --mainview-padding: #{$spacer-5};
+  }
 }
+
+
 
 body { 
   font-family: 'Poppins', sans-serif; 
@@ -21,7 +26,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .main-view {
-  padding: var(--mainview-padding);
+  padding: $spacer-4;
   padding-top: calc(var(--nav-height) + var(--mainview-padding));
   height: 100%;
   overflow: scroll;
