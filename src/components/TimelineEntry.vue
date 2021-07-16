@@ -79,6 +79,11 @@ export default {
       background-color: blue;
       left: var(--timeline-year-width);
       top: 4px;
+      // left: 0;
+      // top: 0;
+      @include media-breakpoint-up(sm) {
+        top: calc(var(--timeline-padding) + 4px);
+      }
     }
 
     &::before {
@@ -87,6 +92,10 @@ export default {
       height: calc(100%);
       left: calc(var(--timeline-circ-width) / 2 - (var(--line-width) / 2) + var(--timeline-year-width));
       top: calc(var(--timeline-padding) + var(--timeline-circ-width) / 2);
+
+      @include media-breakpoint-up(sm) {
+        height: calc(var(--timeline-padding) + 100%);
+      }
     }
 
     &:last-child {
@@ -99,23 +108,27 @@ export default {
 
   .timeline-year {
     margin-left: calc(var(--timeline-circ-width) + #{$spacer-3});
-    width: var(--timeline-year-width);
+    width: 100%;
     display: flex;
 
     @include media-breakpoint-up(sm) {
       margin: 0;
+      width: var(--timeline-year-width);
       padding-right: $spacer-3;
+      padding-top: var(--timeline-padding);
       justify-content: flex-end;
     }
   }
 
   .timeline-position {
+    padding: $spacer-3;
     padding-left: calc(var(--timeline-circ-width) + #{$spacer-3});
+    background-color: $gray-600;
 
     @include media-breakpoint-up(sm) {
       width: calc(100% - var(--timeline-year-width));
       margin-left: calc(var(--timeline-circ-width) + #{$spacer-3});
-      padding: 0px var(--timeline-padding);
+      padding: var(--timeline-padding);
     }  
   }
 </style>
